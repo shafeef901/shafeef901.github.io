@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined th Dynamic Legged Systems Lab (DLS@IIT).
+Joined the Dynamic Legged Systems Lab <a href="https://dls.iit.it">(DLS@IIT) </a>.
