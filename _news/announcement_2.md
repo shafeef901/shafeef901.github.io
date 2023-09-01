@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The preprint of our latest paper on Safe Foothold Adaptations for Quadrupeds,<b> SafeSteps </b>, is now available. See the publications section.
+The preprint of our latest paper on Safe Foothold Adaptations for Legged Robots,<b> SafeSteps </b>, is now available. See the publications section.
