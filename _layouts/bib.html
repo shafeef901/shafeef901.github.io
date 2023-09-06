@@ -114,6 +114,7 @@
           {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {% if entry.additional_text -%}
             {%- capture entrytype -%}<em>{{entry.additional_text}}</em>{%- endcapture -%}
+          {%- endif -%}
         {%- elsif proceedings contains entry.type -%}
           {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
         {%- elsif thesis contains entry.type -%}
