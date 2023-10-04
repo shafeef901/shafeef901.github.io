@@ -1,21 +1,35 @@
 ---
 ---
 
+@inproceedings{omar23humanoids,
+author = {Omar, Shafeef and Amatucci, Lorenzo and Turrisi, Giulio and Barasuol, Victor. and Semini, Claudio,
+title = {SafeSteps: Learning Safer Footstep Planning Policies for Legged Robots via Model-Based Priorss},
+booktitle={IEEE-RAS International Conference on Humanoid Robots )},
+year = {2023},
+preview={safesteps.gif}, 
+website="https://sites.google.com/view/safe-steps-rl/",
+pdf="2307.12664.pdf",
+bibtex_show={true},
+selected={true},
+abstract="We present a footstep planning policy for quadrupedal locomotion that is able to directly take into consideration a-priori safety information in its decisions. At its core, a learning process analyzes terrain patches, classifying each landing location by its kinematic feasibility, shin collision, and terrain roughness. This information is then encoded into a small vector representation and passed as an additional state to the footstep planning policy, which furthermore proposes only safe footstep location by applying a masked variant of the Proximal Policy Optimization (PPO) algorithm [1]. The performance of the proposed approach is shown by comparative simulations on an electric quadruped robot walking in different rough terrain scenarios. We show that violations of the above safety conditions are greatly reduced both during training and the successive deployment of the policy, resulting in an inherently safer footstep planner. Furthermore, we show how, as a byproduct, fewer reward terms are needed to shape the behavior of the policy, which in return is able to achieve both better final performances and sample efficiency.",
+note={accepted} }
+
+
 @misc{omar2023safesteps,
       title={SafeSteps: Learning Safer Footstep Planning Policies for Legged Robots via Model-Based Priors}, 
       author={Shafeef Omar and Lorenzo Amatucci and Victor Barasuol and Giulio Turrisi and Claudio Semini},
       year={2023},
-      eprint={2307.12664},
+      
       archivePrefix={arXiv},
       primaryClass={cs.RO},
-      preview={safesteps.gif}, 
-      pdf="2307.12664.pdf",
-      website="https://sites.google.com/view/safe-steps-rl/",
-      abstract="We present a footstep planning policy for quadrupedal locomotion that is able to directly take into consideration a-priori safety information in its decisions. At its core, a learning process analyzes terrain patches, classifying each landing location by its kinematic feasibility, shin collision, and terrain roughness. This information is then encoded into a small vector representation and passed as an additional state to the footstep planning policy, which furthermore proposes only safe footstep location by applying a masked variant of the Proximal Policy Optimization (PPO) algorithm [1]. The performance of the proposed approach is shown by comparative simulations on an electric quadruped robot walking in different rough terrain scenarios. We show that violations of the above safety conditions are greatly reduced both during training and the successive deployment of the policy, resulting in an inherently safer footstep planner. Furthermore, we show how, as a byproduct, fewer reward terms are needed to shape the behavior of the policy, which in return is able to achieve both better final performances and sample efficiency.",
+      
+      
+      
+      
       arxiv="2307.12664",
       additional_text="In Review",
-      bibtex_show={true},
-      selected={true}
+      
+      
 }
 
 @inproceedings{omar22irim,
