@@ -12,3 +12,11 @@
 "Amatucci":
   - firstname: ["Lorenzo", "L.", "L. A.", "Lorenzo Amatucci"]
     url: https://www.iit.it/it/people-details/-/people/lorenzo-amatucci
+
+"Khadiv":
+  - firstname: ["Majid", "M.", "M. K.", "Majid Khadiv"]
+    url: https://www.professoren.tum.de/en/khadiv-majid
+
+"Dai":
+  - firstname: ["Angela", "A.", "A. D.", "Angela Dai"]
+    url: https://www.professoren.tum.de/en/dai-angela

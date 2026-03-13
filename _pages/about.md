@@ -16,10 +16,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD student with ATARI Lab, supervised by <a href="https://www.professoren.tum.de/en/khadiv-majid">Prof. Majid Khadiv</a>. 
+I am a PhD student with ATARI Lab, supervised by <a href="https://www.professoren.tum.de/en/khadiv-majid">Prof. Majid Khadiv</a> and co-supervised by <a href="https://scholar.google.com/citations?user=IvqCXP4AAAAJ">Prof. Cordelia Schmid</a>.
 
 Previously, I was a research fellow with the <a href="https://dls.iit.it/"> Dynamic Legged Systems (DLS) </a> Group, headed by <a href='https://dls.iit.it/people-details/-/people/claudio-semini'> Claudio Semini </a> at the Istituto Italiano di Tecnologia, where I worked on quadrupeds for safe vision-aided locomotion. Before that, I was a Research Associate at the <a href="https://iisc.ac.in"> Indian Institute of Science</a>, where I worked on Continual Learning for mitigating catastrophic forgetting in neural networks at the Artificial Intelligence and Robotics Laboratory. I graduated from the <a href="https://www.iitm.ac.in"> Indian Institute of Technology Madras (IIT-M) </a> with an Engineering Dual Degree, Bachelor and Master of Technology. 
 
-My current research focuses on inducing biases using model-based priors to learn safe and robust vision-aided <b>loco-manipulation</b> policies for <b>legged robots</b>, including long-term <b>task and motion planning</b>.
+My current research centers on building <b>generalizable policies</b> for robots, with a particular emphasis on <b>humanoid robots</b>. I am interested in <b>reinforcement learning</b>, <b>motion retargeting</b>, <b>diffusion models</b>, and <b>vision-language-action models (VLAs)</b> as scalable alternatives to massive tele-operation for acquiring diverse robot behaviors. The goal? Robots that learn on their own — no human puppeteers required.
 
 <b>Work with us </b>: I am currently seeking exceptional master's students interested in contributing to our research in reinforcement learning for robotics. If you are enthusiastic about developing advanced algorithms and applying them to real-world legged robots, please feel free to get in touch!
