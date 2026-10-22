@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DynaRetarget and Humanoid-DART accepted to IEEE RA-L
-date: 2026-10-22
+date: 2026-10-15
 inline: true
 related_posts: false
 ---
