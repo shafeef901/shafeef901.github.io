@@ -1,9 +1,10 @@
 {%- assign img_path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" -%}
+{%- assign img_extension = include.path | split: '.' | last | downcase | prepend: '.' -%}
 
 <figure>
 
   <picture>
-    {% if site.imagemagick.enabled %}
+    {% if site.imagemagick.enabled and site.imagemagick.input_formats contains img_extension %}
     {% for i in site.imagemagick.widths -%}
       <source
         class="responsive-img-srcset"
@@ -23,7 +24,7 @@
       {% if include.min-height %}min-height="{{ include.min-height }}"{% endif %}
       {% if include.max-width %}max-width="{{ include.max-width }}"{% endif %}
       {% if include.max-height %}max-height="{{ include.max-height }}"{% endif %}
-      {% if include.alt %}alt="{{ include.alt }}"{% endif %}
+      {% if include.alt %}alt="{{ include.alt | escape }}"{% endif %}
       {% if include.title %}title="{{ include.title }}"{% endif %}
       {% if include.zoomable %}data-zoomable{% endif %}
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"

@@ -1,51 +1,116 @@
 ---
 ---
 
+@article{omar2026diplo,
+      author = {Omar, Shafeef and Sanokowski, Sebastian and Daneshmand, Elham and Yu, Dian and Cremers, Daniel and Schmid, Cordelia and Khadiv, Majid},
+      title = {{DiPLO}: Self-distilled Diffusion Planning for Loco-manipulation},
+      journal = {arXiv preprint arXiv:2610.24847},
+      year = {2026},
+      arxiv = {2610.24847},
+      pdf = {https://arxiv.org/pdf/2610.24847},
+      website = {https://atarilab.github.io/diplo-website/},
+      video = {https://youtu.be/rDrdnYQUYoM},
+      preview = {diplo.jpg},
+      bibtex_show = {true},
+      selected = {true},
+      abstract = {DiPLO pairs a diffusion planner with an RL-trained whole-body tracker for humanoid loco-manipulation. Self-distillation removes the planner's dependence on reference-motion conditioning, and reinforcement learning then improves its plans with the tracker held fixed. The resulting system plans from state history and object goals, generalizes to new goals, and executes pick-carry-place motions on a Unitree G1 without real-world fine-tuning.}
+}
+
+@article{ciebielski2026faro,
+      author = {Ciebielski, Michal and Omar, Shafeef and Johnson, Aaron and Khadiv, Majid},
+      title = {{FARO}: Feasibility-Aware Robot Motion Optimization},
+      journal = {arXiv preprint arXiv:2607.18362},
+      year = {2026},
+      arxiv = {2607.18362},
+      pdf = {https://arxiv.org/pdf/2607.18362},
+      note = {Best Poster Award, IEEE RAS Technical Committee on Optimization for Robotics, July 2026.},
+      video = {https://youtu.be/R6qCHoCormQ},
+      abbr = {arXiv},
+      bibtex_show = {true},
+      abstract = {FARO combines rapid feasibility checks with trajectory optimization to plan humanoid loco-manipulation. A nested kinematic and dynamic optimizer evaluates candidate contact sequences, guiding tree search and language-model-generated contact plans. An RL tracking controller executes the resulting motions on hardware.}
+}
+
+@article{debbad2026humanoiddart,
+      author = {Debbad, Pranav and Thiagarajan, Kanish and Dhédin, Victor and Omar, Shafeef and Khadiv, Majid},
+      title = {{Humanoid-DART}: Humanoid Loco-Manipulation using Diffusion-guided Augmentation through Relabeling and Tracking},
+      journal = {arXiv preprint arXiv:2606.26855},
+      year = {2026},
+      arxiv = {2606.26855},
+      pdf = {https://arxiv.org/pdf/2606.26855},
+      abbr = {arXiv},
+      bibtex_show = {true},
+      abstract = {Humanoid-DART expands a small set of demonstrations into a broader repertoire of humanoid loco-manipulation skills. The framework combines goal-conditioned diffusion trajectories with reinforcement learning for tracking, using self-supervised augmentation and relabeling to explore new goals with limited expert supervision.}
+}
+
 @article{taouil26motiondisco,
       author = {Taouil*, Ilyass and Ciebielski*, Michal and Omar*, Shafeef and Zhao, Haizhou and Dai, Angela and Johnson, Aaron M. and Khadiv, Majid},
-      title = {MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation},
+      title = {{MotionDisco}: Motion Discovery for Extreme Humanoid Loco-Manipulation},
       journal = {arXiv preprint arXiv:2606.06139},
       year = {2026},
       arxiv = {2606.06139},
-      video = {https://youtu.be/DHiVz34QYlw},
+      pdf = {https://arxiv.org/pdf/2606.06139},
       website = {https://atarilab.github.io/motiondisco.io/},
+      video = {https://youtu.be/DHiVz34QYlw},
       preview = {motiondisco.gif},
+      note = {Equal contribution: Ilyass Taouil, Michal Ciebielski, and Shafeef Omar.},
       bibtex_show = {true},
       selected = {true},
-      abstract = "We present MotionDisco, a framework that discovers contact-rich, long-horizon humanoid loco-manipulation motions from scratch, without relying on teleoperation or motion retargeting from human demonstrations. This is challenging because the space of possible contact interactions grows combinatorially with the task horizon and the number of objects in the scene. MotionDisco enables rapid discovery of novel motions by coupling a large language model (LLM) guided evolutionary search over sequences of interactions with an efficient sequential kinodynamic trajectory optimizer and pruning strategy. Through extensive ablation studies, we show that our LLM-guided search discovers successful whole-body trajectories across several challenging long-horizon tasks. Finally, by training reinforcement learning tracking policies on the discovered trajectories, we transfer the motions to a real humanoid robot. This is the first work to discover and deploy long-horizon humanoid loco-manipulation skills entirely through automated evolutionary search."
+      abstract = {MotionDisco discovers humanoid loco-manipulation motions without demonstrations or teleoperation. Language-model-guided evolutionary search proposes contact interactions, while a trajectory optimizer checks and refines the resulting whole-body motions. RL tracking policies transfer the discovered skills to a real humanoid robot.}
+}
+
+@article{daneshmand2026slowrl,
+      author = {Daneshmand, Elham and Omar, Shafeef and Berseth, Glen and Khadiv, Majid and Lin, Hsiu-Chin},
+      title = {{SLowRL}: Safe Low-Rank Adaptation Reinforcement Learning for Locomotion},
+      journal = {arXiv preprint arXiv:2603.17092},
+      year = {2026},
+      arxiv = {2603.17092},
+      pdf = {https://arxiv.org/pdf/2603.17092},
+      html = {https://openreview.net/forum?id=W6vl0nCoDA},
+      note = {Workshop version presented as a poster at RL in Big Worlds, RLC 2026.},
+      abbr = {arXiv},
+      bibtex_show = {true},
+      abstract = {SLowRL adapts locomotion policies from simulation to hardware by combining low-rank parameter updates with a recovery policy that intervenes near unsafe states. Evaluations on jumping and trotting show faster fine-tuning with fewer safety violations than full-policy updates, including real-world adaptation on a Unitree Go2.}
 }
 
 @article{dhedin26dynaretarget,
-      author = {Dhedin*, Victor and Taouil*, Ilyass and Omar*, Shafeef and Yu, Dian and Tao, Kun and Dai, Angela and Khadiv, Majid},
+      author = {Dhédin*, Victor and Taouil*, Ilyass and Omar*, Shafeef and Yu, Dian and Tao, Kun and Dai, Angela and Khadiv, Majid},
       title = {DynaRetarget: Dynamically-Feasible Retargeting using Sampling-Based Trajectory Optimization},
       journal = {arXiv preprint arXiv:2602.06827},
       year = {2026},
       arxiv = {2602.06827},
+      pdf = {https://arxiv.org/pdf/2602.06827},
       video = {https://www.youtube.com/watch?v=YlopoVulwi8},
-      website = {https://dynaretarget.github.io/},
+      website = {https://atarilab.github.io/dynaretarget.io/},
+      code = {https://github.com/Atarilab/sbto},
       preview = {dynaretarget.gif},
+      note = {Equal contribution: Victor Dhédin, Ilyass Taouil, and Shafeef Omar.},
       bibtex_show = {true},
       selected = {true},
-      abstract = "DynaRetarget: Dynamically-Feasible Retargeting using Sampling-Based Trajectory Optimization."
+      abstract = {DynaRetarget converts human demonstrations into dynamically feasible humanoid motions. Sampling-based trajectory optimization refines kinematic retargeting results over progressively longer horizons, handling variations in object mass, size, and geometry. The resulting motions support training humanoid control policies and generating synthetic loco-manipulation data.}
 }
 
 @inproceedings{omar25contact,
       author = {Omar*, Shafeef and Khadiv, Majid},
       title = {Learning to Act Through Contact: A Unified View of Multi-Task Robot Learning},
-      booktitle = {Proceedings of The 8th Annual Learning for Dynamics \& Control Conference (L4DC)},
+      booktitle = {Proceedings of The 8th Annual Learning for Dynamics and Control Conference},
       series = {Proceedings of Machine Learning Research},
+      volume = {331},
+      pages = {1199--1211},
       publisher = {PMLR},
       year = {2026},
       arxiv = {2510.03599},
-      video = {https://www.youtube.com/watch?v=chKcB8Un22w},
+      html = {https://proceedings.mlr.press/v331/omar26a.html},
+      url = {https://proceedings.mlr.press/v331/omar26a.html},
+      pdf = {https://raw.githubusercontent.com/mlresearch/v331/main/assets/omar26a/omar26a.pdf},
+      video = {https://youtu.be/L1vjmQqvc4M},
       preview = {l2atc.gif},
       bibtex_show = {true},
       selected = {true},
-      abstract = "Learning to Act Through Contact: A Unified View of Multi-Task Robot Learning."
+      abstract = {This work represents locomotion and manipulation tasks as sequences of contact goals: where and when contact should occur, and which end-effectors should be active. A goal-conditioned RL policy learns multiple skills within each robotic setting, including quadrupedal gaits, humanoid locomotion, and bimanual object manipulation. Explicit contact goals improve generalization to unseen tasks.}
 }
 
 @inproceedings{omar23humanoids,
-      author = {Omar*, Shafeef and Amatucci, Lorenzo and Turrisi, Giulio and Barasuol, Victor and Semini, Claudio},
+      author = {Omar*, Shafeef and Amatucci, Lorenzo and Barasuol, Victor and Turrisi, Giulio and Semini, Claudio},
       title = {SafeSteps: Learning Safer Footstep Planning Policies for Legged Robots via Model-Based Priors}, 
       booktitle={IEEE-RAS International Conference on Humanoid Robots}, 
       year = {2023}, 
@@ -59,12 +124,12 @@
 }
 
 @inproceedings{omar22irim,
-	author = {Omar*, Shafeef and Amtucci, Lorenzo and Turrisi, Giulio and Barasuol, Victor and Semini, Claudio},
+	author = {Omar*, Shafeef and Amatucci, Lorenzo and Turrisi, Giulio and Barasuol, Victor and Semini, Claudio},
 	booktitle = {I-RIM Conference},
 	title = {Fast Convex Visual Foothold Adaptation for Quadrupedal Locomotion},
 	year = {2022},
 	pages={143-146},
-	doi={110.5281/zenodo.7531324},
+	doi={10.5281/zenodo.7531324},
 	preview={hyq.png},
 	bibtex_show={true}, 
 	pdf="omar2022irim.pdf",
