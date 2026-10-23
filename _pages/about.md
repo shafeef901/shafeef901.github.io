@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: Georg-Brauchle-Ring 60-62, 80992 Munich
+  address: Heßstraße 134, 80797 München-Schwabing-West
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
